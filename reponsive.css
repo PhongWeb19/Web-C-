@@ -1,0 +1,59 @@
+@media (min-width: 1024px) {
+    #header #name-header {
+        display:none;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    #header #name-header {
+        display:none;
+    }
+
+    #header #contract-me{
+        display: none;
+    }
+}
+@media (max-width: 739px) {
+    #background-header {
+        padding-top:100%;
+    }
+    #header #subnav {
+        display: none;
+    }
+    #header #contract-me {
+        display:none;
+    }
+
+    #nav #i-nav {
+        display: block;
+    }
+    #header i{
+        display: block;
+    }
+    .add {
+        width: 90%;
+        display: inline-block;
+        background-color: #ccc;
+        margin: 0 20px;
+        margin-bottom: 26px;
+        border: 2px solid #1de6ff;
+    }
+
+    #footer h1{
+        display: none;
+    }
+    #introduce-infor {
+        padding-top: 0%;
+    }
+    .button-infor {
+        margin-top: 10px;
+    }
+
+    #header {
+        position: fixed;
+        top:0;
+        width:100%;
+        z-index: 2;
+        
+    }
+}  

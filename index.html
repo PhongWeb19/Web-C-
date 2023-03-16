@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reponsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
@@ -12,8 +13,9 @@
     <div id="main">
         <div id="background-header">
             <div id="header">
+                <i class="fa-sharp fa-solid fa-bars button-left-header"></i>
                 <div id="nav">
-                    <ul>
+                    <ul id="subnav">
                         <li><a href="">Home</a></li>
                         <li><a href="#infor">About Me</a></li>
                         <li><a href="#footer">Contact</a></li>
@@ -21,6 +23,7 @@
                     </ul>
                     <button id="contract-me">Contract</button>
                 </div>
+
             </div>
             <div id="introduce">
                 <div id="introduce-infor">
@@ -41,7 +44,7 @@
         <div id="add-infor">
             <div id="add-infor-bottom">
                 <div class="add">
-                    <img class="add-img" src="./img/anh2.jpg">
+                    <img class="add-img" src="/img/anh2.png">
                     <div class="father">
                         <h3 class="text-add-infor">My Project</h3>
                         <p class="text-paragraph-infor">I’m an expert in my field but I wouldn’t be where I am without those who've helped me along the way. That’s why I love connecting with like-minded people and using my passion and skills to make a difference.</p>
@@ -51,7 +54,7 @@
                     </div>
                 </div>
                 <div class="add">
-                    <img class="add-img" src="./img/anh2.jpg">
+                    <img class="add-img" src="/img/anh2.png">
                     <div class="father">
                         <h3 class="text-add-infor">About Me</h3>
                         <p class="text-paragraph-infor">I’m an expert in my field but I wouldn’t be where I am without those who've helped me along the way. That’s why I love connecting with like-minded people and using my passion and skills to make a difference.</p>
@@ -72,5 +75,29 @@
             <h1>Phong Bá</h1>
         </div>
     </div>
+    <div id="i-nav" >
+        <i class="fa-solid fa-xmark buttonmenu">
+            <ul id="i-subnav">
+                <li><a href=".#">Home</a></li>
+                <li><a href="#infor">About Me</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href=".#">Gallery</a></li>
+            </ul>
+        </i>
+        
+    </div>
+    <script>
+        const button=document.querySelector('.button-left-header')
+        const menu=document.querySelector('#i-nav')
+        const buttonmenu=document.querySelector('.buttonmenu')
+        function showmenu() {
+            menu.classList.add('open')
+        }
+        button.addEventListener('click',showmenu)
+        function closemenu() {
+            menu.classList.remove('open')
+        }
+        buttonmenu.addEventListener('click',closemenu)
+    </script>
 </body>
 </html>
