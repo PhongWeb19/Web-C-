@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 #background-header {
-    background-image: url(.img/anh1.jpg);
+    background-image: url(./img/anh1.jpg);
     padding-top: 50%;
     background-repeat: no-repeat;
     background-size: cover;
