@@ -56,7 +56,7 @@
         z-index: 2;
         
     }
-     .text-infor {
+    #introduce-infor .text-infor {
         padding-top: 0px;
     }
 }  
